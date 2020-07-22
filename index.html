@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Joe Napper | Full Stack Software Developer</title>
+    <!-- EmailJS API -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Canvas -->
+        <div class="canvas-container">
+            <canvas id="canvas1"></canvas>
+        </div>
+        <!-- End -->
+    
+        <!-- Name & Title -->
+        <div class="text-container">
+            <h1 class="name">Joe Napper</h1>
+            <span class="title">Full Stack Software Developer - UX Designer</span>  
+        </div>
+        <!-- End -->
+
+        <!-- Latest Blog & Live Site -->
+        <div id="content">
+            <a href="assets/images/Why-invest-in-an-online-presence.pdf" target="_blank" id="lat-blog" class="box">
+                <p>Read my latest blog!</p>
+                <p>Why you should invest in an online presence.</p>
+            </a>
+
+            <a href="https://joenapper.github.io/Clockwork/" target="_blank" id="lat-proj" class="box">
+                <p>My most recent project!</p>
+                <p>Clockwork Media marketing and web agency.</p>
+            </a>
+        </div>
+        <!-- End -->
+
+        <!-- Social Icons & Hire Button -->
+        <div id="icons">
+            <a href="https://www.youtube.com/channel/UCktkUyILZZnhK1YQq_rpEZw?fbclid=IwAR3e3iQNdizItgyr9xnM70L4LaQwQ47sDkqFZ5IxNY4yPew_DYaKQb9CarM" target="_blank" class="iconbtn fab fa-youtube"></a>
+            <a href="https://www.linkedin.com/in/joe-napper-655743191/" target="_blank" class="iconbtn fab fa-linkedin-in"></a>
+            <a href="https://github.com/joenapper" target="_blank" class="iconbtn fab fa-github"></a>
+            <a href="https://www.facebook.com/Clockwork-Media-111772813952745" target="_blank" class="iconbtn fab fa-facebook"></a>
+            <button class="hire-button" id="show-modal">Hire me</button>
+        </div>
+        <!-- End -->
+
+        <!-- Pop-up Modal / Contact Form -->
+        <div class="modal modal-hidden">
+            <div class="modal-content">
+                <div class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                <h3 class="form-title">Get In Touch</h3>
+                <p>Alternatively, contact me on social media!</p>
+                <form id="contact-form" onsubmit="return sendMail(this);">
+                    <input type="text" name="name" placeholder="Company / Name" required>
+                    <input type="text" name="number" placeholder="Contact Number" required>
+                    <input type="email" name="email" placeholder="Contact Email" required>
+                    <textarea name="project" id="" cols="30" rows="10" placeholder="Brief Project Overview" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- End -->
+
+    </div>
+    <!-- End Of Container -->
+    
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/secret-email.js"></script>
+    <script src="assets/js/email.js"></script>
+</body>
+</html>
